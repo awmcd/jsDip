@@ -61,4 +61,25 @@ describe("DATC Tests [BASIC CHECKS]", function () {
         expect(results).toEqual(false);
     });
     
+    it('6.A.7: ONLY ARMIES CAN BE CONVOYED', function () {
+        var test = tests.a7;
+        var results = jsDip.tests.execute(test);
+        report(results, test);
+        expect(results).toEqual(false);
+    });
+    
+    it('6.A.8: SUPPORT TO HOLD YOURSELF IS NOT POSSIBLE', function () {
+        var test = tests.a8;
+        var results = jsDip.tests.execute(test);
+        report(results, test);
+        expect(results).toEqual(false);
+    });
+    
+    it('6.A.9: FLEETS MUST FOLLOW COAST IF NOT ON SEA', function () {
+        var test = tests.a9;
+        var results = jsDip.tests.execute(test);
+        report(results, test);
+        expect(results).toEqual(false);
+    });
+    
 });

@@ -12,4 +12,4 @@ requirejs(['adjudicator/App'],
     adjudicator = delivery;
 });
 
-console.log(adjudicator);
+console.log('Adjduciator: ', adjudicator);

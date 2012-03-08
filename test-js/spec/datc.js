@@ -81,5 +81,19 @@ describe("DATC Tests [BASIC CHECKS]", function () {
         report(results, test);
         expect(results).toEqual(false);
     });
+
+    it('6.A.10: SUPPORT ON UNREACHABLE DESTINATION NOT POSSIBLE', function () {
+        var test = tests.a10;
+        var results = jsDip.tests.execute(test);
+        report(results, test);
+        expect(results).toEqual(false);
+    });
+    
+    it('6.A.11: SIMPLE BOUNCE', function () {
+        var test = tests.a11;
+        var results = jsDip.tests.execute(test);
+        report(results, test);
+        expect(results).toEqual(false);
+    });
     
 });

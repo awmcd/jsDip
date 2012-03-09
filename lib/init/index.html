@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <script src="lib/require.js"></script>
+        <script>
+            require({
+                baseUrl: 'lib',
+                paths: {
+                    jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min',
+                    underscore: 'https://raw.github.com/amdjs/underscore/master/underscore-min'
+                },
+                priority: ['jquery']
+            }, ['main_index']);
+        </script>
+
+    </head>
+    <body>
+        Console only.
+    </body>
+</html>

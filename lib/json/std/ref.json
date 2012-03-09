@@ -487,7 +487,7 @@
              },
              "sc":{
                  "name":"St. Petersburg, South Coast",
-                 "id":"bstp_sc",
+                 "id":"stp_sc",
                  "type":"coast",
                  "adj":[
                      "fin",

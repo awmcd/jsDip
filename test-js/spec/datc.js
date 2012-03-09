@@ -128,5 +128,12 @@ describe("DATC Tests", function () {
             report(results, test);
             expect(results).toEqual(false);
         });
+        
+        it('6.B.2: MOVING WITH UNSPECIFIED COAST WHEN COAST IS NOT NECESSARY', function () {
+            var test = tests.b2;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
     });
 });

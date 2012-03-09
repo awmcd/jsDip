@@ -225,7 +225,8 @@
             "par",
             "bur",
             "mar",
-            "spa"
+            "spa",
+            "spa_nc"
          ]
       },
       {
@@ -234,6 +235,7 @@
          "type":"coast",
          "adj":[
             "spa",
+            "spa_sc",
             "gas",
             "bur",
             "pie",
@@ -422,13 +424,14 @@
          "center":"true"
       },
       {
-         "name":"lvnonia",
+         "name":"Livonia",
          "id":"lvn",
          "type":"coast",
          "adj":[
             "bal",
             "bot",
             "stp",
+            "stp_sc",
             "mos",
             "war",
             "pru"
@@ -474,12 +477,18 @@
          ],
          "coasts":{
              "nc":{
+                 "name":"St. Petersburg, North Coast",
+                 "id":"stp_nc",
+                 "type":"coast",
                  "adj":[
                      "bar",
                      "nwy"
                      ]
              },
              "sc":{
+                 "name":"St. Petersburg, South Coast",
+                 "id":"bstp_sc",
+                 "type":"coast",
                  "adj":[
                      "fin",
                      "bot",
@@ -545,6 +554,8 @@
          "type":"coast",
          "adj":[
             "bul",
+            "bul_sc",
+            "bul_ec",
             "bla",
             "ank",
             "smy",
@@ -616,6 +627,9 @@
          ],
          "coasts":{
              "ec":{
+                 "name":"Bulgaria, East Coast",
+                 "id":"bul_ec",
+                 "type":"coast",
                  "adj":[
                      "rum",
                      "bla",
@@ -623,6 +637,9 @@
                      ]
              },
              "sc":{
+                 "name":"Bulgaria, South Coast",
+                 "id":"bul_sc",
+                 "type":"coast",
                  "adj":[
                      "gre",
                      "aeg",
@@ -653,6 +670,7 @@
          "adj":[
             "nwy",
             "stp",
+            "stp_sc",
             "bot",
             "swe"
          ]
@@ -665,6 +683,7 @@
             "alb",
             "ser",
             "bul",
+            "bul_sc",
             "aeg",
             "ion"
          ],
@@ -691,6 +710,7 @@
             "nth",
             "nrg",
             "bar",
+            "stp_nc",
             "stp",
             "fin",
             "swe",
@@ -714,7 +734,9 @@
          "type":"coast",
          "adj":[
             "mid",
-            "spa"
+            "spa",
+            "spa_nc",
+            "spa_sc"
          ],
          "center":"true"
       },
@@ -729,6 +751,7 @@
             "sev",
             "bla",
             "bul",
+            "bul_ec",
             "ser",
             "gal"
          ],
@@ -761,6 +784,9 @@
          ],
          "coasts":{
              "nc":{
+                 "name":"Spain, North Coast",
+                 "id":"spa_nc",
+                 "type":"coast",
                  "adj":[
                      "gas",
                      "mid",
@@ -768,6 +794,9 @@
                      ]
              },
              "sc":{
+                 "name":"Spain, South Coast",
+                 "id":"spa_sc",
+                 "type":"coast",
                  "adj":[
                      "mid",
                      "por",
@@ -824,6 +853,7 @@
          "adj":[
             "gre",
             "bul",
+            "bul_sc",
             "con",
             "smy",
             "eas",
@@ -851,6 +881,7 @@
          "adj":[
             "nrg",
             "stp",
+            "stp_nc",
             "nwy"
          ]
       },
@@ -864,6 +895,7 @@
             "ank",
             "con",
             "bul",
+            "bul_ec",
             "rum"
          ]
       },
@@ -901,6 +933,7 @@
             "swe",
             "fin",
             "stp",
+            "stp_sc",
             "lvn",
             "bal"
          ]
@@ -911,6 +944,7 @@
          "type":"sea",
          "adj":[
             "spa",
+            "spa_sc",
             "mar",
             "pie",
             "tus",
@@ -968,6 +1002,8 @@
             "bre",
             "gas",
             "spa",
+            "spa_nc",
+            "spa_sc",
             "por",
             "wes",
             "naf"
@@ -1046,6 +1082,7 @@
          "type":"sea",
          "adj":[
             "spa",
+            "spa_sc",
             "gol",
             "tyn",
             "tun",

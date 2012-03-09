@@ -72,7 +72,7 @@ define ->
             id: '6.A.10'
             what: 'SUPPORT ON UNREACHABLE DESTINATION NOT POSSIBLE'
             unit: [['aus', 'A', 'ven'], ['ita', 'F', 'rom'], ['ita', 'A', 'apu']]
-            orders: ['A ven H', 'F Rom A Apu-Ven', 'A Apu-Ven']
+            orders: ['A ven H', 'F Rom S A Apu-Ven', 'A Apu-Ven']
             expect: rom: result:false
     
         a11: 

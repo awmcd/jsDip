@@ -472,6 +472,21 @@
             "bot",
             "fin"
          ],
+         "coasts":{
+             "nc":{
+                 "adj":[
+                     "bar",
+                     "nwy"
+                     ]
+             },
+             "sc":{
+                 "adj":[
+                     "fin",
+                     "bot",
+                     "lvp"
+                     ]
+             }
+         },            
          "center":"true"
       },
       {
@@ -599,6 +614,22 @@
             "gre",
             "ser"
          ],
+         "coasts":{
+             "ec":{
+                 "adj":[
+                     "rum",
+                     "bla",
+                     "con"
+                     ]
+             },
+             "sc":{
+                 "adj":[
+                     "gre",
+                     "aeg",
+                     "con"
+                     ]
+             }
+         },            
          "center":"true"
       },
       {
@@ -728,6 +759,24 @@
             "gol",
             "wes"
          ],
+         "coasts":{
+             "nc":{
+                 "adj":[
+                     "gas",
+                     "mid",
+                     "por"
+                     ]
+             },
+             "sc":{
+                 "adj":[
+                     "mid",
+                     "por",
+                     "mid",
+                     "gol",
+                     "mar"
+                     ]
+             }
+         },                     
          "center":"true"
       },
       {

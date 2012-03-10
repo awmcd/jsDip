@@ -480,6 +480,7 @@
                  "name":"St. Petersburg, North Coast",
                  "id":"stp_nc",
                  "type":"coast",
+                 "subcoast": "stp",
                  "adj":[
                      "bar",
                      "nwy"
@@ -489,6 +490,7 @@
                  "name":"St. Petersburg, South Coast",
                  "id":"stp_sc",
                  "type":"coast",
+                 "subcoast": "stp",
                  "adj":[
                      "fin",
                      "bot",
@@ -630,6 +632,7 @@
                  "name":"Bulgaria, East Coast",
                  "id":"bul_ec",
                  "type":"coast",
+                 "subcoast": "bul",
                  "adj":[
                      "rum",
                      "bla",
@@ -640,6 +643,7 @@
                  "name":"Bulgaria, South Coast",
                  "id":"bul_sc",
                  "type":"coast",
+                 "subcoast": "bul",
                  "adj":[
                      "gre",
                      "aeg",
@@ -787,6 +791,7 @@
                  "name":"Spain, North Coast",
                  "id":"spa_nc",
                  "type":"coast",
+                 "subcoast": "spa",
                  "adj":[
                      "gas",
                      "mid",
@@ -797,6 +802,7 @@
                  "name":"Spain, South Coast",
                  "id":"spa_sc",
                  "type":"coast",
+                 "subcoast": "spa",
                  "adj":[
                      "mid",
                      "por",

@@ -135,3 +135,5 @@ define ->
                     result:false
                 con:
                     result:false
+                    
+        # DATC 6.B.14 not relevant to this implementation

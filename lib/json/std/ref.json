@@ -119,7 +119,7 @@
          "type":"coast",
          "adj":[
             "nat",
-            "nrg",
+            "nwg",
             "edi",
             "lvp"
          ]
@@ -130,7 +130,7 @@
          "type":"coast",
          "adj":[
             "cly",
-            "nrg",
+            "nwg",
             "nth",
             "yor",
             "lvp"
@@ -712,7 +712,7 @@
          "type":"coast",
          "adj":[
             "nth",
-            "nrg",
+            "nwg",
             "bar",
             "stp_nc",
             "stp",
@@ -885,7 +885,7 @@
          "id":"bar",
          "type":"sea",
          "adj":[
-            "nrg",
+            "nwg",
             "stp",
             "stp_nc",
             "nwy"
@@ -1020,7 +1020,7 @@
          "id":"nat",
          "type":"sea",
          "adj":[
-            "nrg",
+            "nwg",
             "cly",
             "lvp",
             "iri",
@@ -1032,7 +1032,7 @@
          "id":"nth",
          "type":"sea",
          "adj":[
-            "nrg",
+            "nwg",
             "nwy",
             "ska",
             "den",
@@ -1046,7 +1046,7 @@
       },
       {
          "name":"Norwegian Sea",
-         "id":"nrg",
+         "id":"nwg",
          "type":"sea",
          "adj":[
             "nat",

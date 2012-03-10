@@ -220,6 +220,34 @@ describe("DATC Tests", function () {
             report(results, test);
             expect(results).toEqual(false);
         });
+    });
+    
+    describe("CIRCULAR MOVEMENT", function () {
+        var tests;
+    
+        var report = function (results, test6a) {
+            if (results) {
+                console.log(results);
+                console.log('----- ', test6a.id, ' ', test6a.what);
+                console.log('-------- FFFFFFFFFFFFFAAIILL!');
+                console.log('-----------------------------');
+                console.log(' ');
+            } else {
+                console.log('----- Passed: ', test6a.id, ' ', test6a.what);
+                console.log(' ');
+                console.log(' ');
+            }
+        }
         
+        beforeEach(function () {
+            tests = jsDip.tests.datc6c;
+        });
+        
+        it('6.C.1: THREE ARMY CIRCULAR MOVEMENT', function () {
+            var test = tests.c1;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
     });
 });

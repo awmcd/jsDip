@@ -250,5 +250,79 @@ describe("DATC Tests", function () {
             report(results, test);
             expect(results).toEqual(false);
         });
+        
+        it('6.C.2: THREE ARMY CIRCULAR MOVEMENT WITH SUPPORT', function () {
+            var test = tests.c2;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.C.3: A DISRUPTED THREE ARMY CIRCULAR MOVEMENT', function () {
+            var test = tests.c3;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+    });
+    
+describe("SUPPORTS AND DISLODGES", function () {
+        var tests;
+    
+        var report = function (results, test6a) {
+            if (results) {
+                console.log(results);
+                console.log('----- ', test6a.id, ' ', test6a.what);
+                console.log('-------- FFFFFFFFFFFFFAAIILL!');
+                console.log('-----------------------------');
+                console.log(' ');
+            } else {
+                console.log('----- Passed: ', test6a.id, ' ', test6a.what);
+                console.log(' ');
+                console.log(' ');
+            }
+        }
+        
+        beforeEach(function () {
+            tests = jsDip.tests.datc6d;
+        });
+        
+        it('6.D.1: SUPPORTED HOLD CAN PREVENT DISLODGEMENT', function () {
+            var test = tests.d1;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.2: A MOVE CUTS SUPPORT ON HOLD', function () {
+            var test = tests.d2;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.3: A MOVE CUTS SUPPORT ON MOVE', function () {
+            var test = tests.d3;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.4: SUPPORT TO HOLD ON UNIT SUPPORTING A HOLD ALLOWED', function () {
+            var test = tests.d4;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.5: SUPPORT TO HOLD ON UNIT SUPPORTING A MOVE ALLOWED', function () {
+            var test = tests.d5;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        
     });
 });

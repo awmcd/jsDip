@@ -14,20 +14,36 @@ define ->
                 smy:
                     result:true
                     
-        
-        c99:
-            id: '6.C.1'
-            what: 'TEST'
-            unit: [['eng', 'F', 'nwg'], ['ger', 'F', 'ska'], ['ger', 'F', 'nth'],
-                   ['rus', 'F', 'nwy']]
-            orders: ['F nwg-nth', 'F ska S F nth-nwy', 'F nth-nwy', 'F nwy-nwg']
+        c2:
+            id: '6.C.2'
+            what: 'THREE ARMY CIRCULAR MOVEMENT WITH SUPPORT'
+            unit: [['tur', 'F', 'ank'], ['tur', 'A', 'con'], ['tur', 'A', 'smy'],
+                   ['tur', 'A', 'bul']]
+            orders: ['F Ank-Con', 'A Con-Smy', 'A Smy-Ank', 'A Bul S F Ank-Con']
             expect:
-                ska:
+                ank:
                     result:true
-                nth:
+                con:
                     result:true
-                nwy:
+                smy:
                     result:true
-                nwg:
+                bul:
                     result:true
                     
+        c3:
+            id: '6.C.3'
+            what: 'A DISRUPTED THREE ARMY CIRCULAR MOVEMENT'
+            unit: [['tur', 'F', 'ank'], ['tur', 'A', 'con'], ['tur', 'A', 'smy'],
+                   ['tur', 'A', 'bul']]
+            orders: ['F Ank-Con', 'A Con-Smy', 'A Smy-Ank', 'A Bul-Con']
+            expect:
+                ank:
+                    result:false
+                con:
+                    result:false
+                smy:
+                    result:false
+                bul:
+                    result:false
+        
+        # UNFINISHED!

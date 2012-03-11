@@ -1,16 +1,5 @@
-describe("DATC Tests Init", function () {
-
-    it("Found DATC Test Library", function () {
-        
-    });
-
-    it("Found DATC Test Executer", function () {
-        
-    });
-});
-
-
 describe("DATC Tests", function () {
+
     describe("BASIC TESTS", function () {
         var tests;
     
@@ -266,7 +255,7 @@ describe("DATC Tests", function () {
         });
         
     });
-    
+
 describe("SUPPORTS AND DISLODGES", function () {
         var tests;
     
@@ -287,7 +276,7 @@ describe("SUPPORTS AND DISLODGES", function () {
         beforeEach(function () {
             tests = jsDip.tests.datc6d;
         });
-        
+
         it('6.D.1: SUPPORTED HOLD CAN PREVENT DISLODGEMENT', function () {
             var test = tests.d1;
             var results = jsDip.tests.execute(test);
@@ -315,6 +304,7 @@ describe("SUPPORTS AND DISLODGES", function () {
             report(results, test);
             expect(results).toEqual(false);
         });
+
         
         it('6.D.5: SUPPORT TO HOLD ON UNIT SUPPORTING A MOVE ALLOWED', function () {
             var test = tests.d5;

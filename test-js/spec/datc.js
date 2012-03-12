@@ -313,6 +313,12 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
+        it('Aaron\'s Convoy Tests', function () {
+            var test = tests.d6;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
         
     });
 });

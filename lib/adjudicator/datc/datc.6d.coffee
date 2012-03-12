@@ -49,3 +49,25 @@ define ->
                 ger: ['A ber S A mun-sil', 'F kie S A ber', 'A mun-sil']
                 rus: ['F bal S A pru-ber', 'A pru-ber']
             expect: pru: result:false
+            
+            
+        d6:
+            id: 'Aaron\'s Test'
+            what: 'Basic convoy situation'
+            orders:
+                fra: ['A spa-nwy']
+                tur: ['F mid C A spa-nwy', 'F nat C A spa-nwy', 'F nwg C A spa-nwy']
+            expect: spa: result:true
+        
+        
+        d6real:
+            id: '6.D.6'
+            what: 'SUPPORT TO HOLD ON CONVOYING UNIT ALLOWED'
+            orders:
+                ger: ['A ber-swe', 'F bal C A ber-swe', 'F pru S F bal']
+                rus: ['F lvn-bal', 'F gol S F lvn-bal']
+            expect:
+                lvn:
+                    result:false
+                ber:
+                    result:true

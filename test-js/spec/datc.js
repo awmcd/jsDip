@@ -189,14 +189,7 @@ describe("DATC Tests", function () {
             report(results, test);
             expect(results).toEqual(false);
         });
-        
-        it('6.B.11: COAST CAN NOT BE ORDERED TO CHANGE', function () {
-            var test = tests.b11;
-            var results = jsDip.tests.execute(test);
-            report(results, test);
-            expect(results).toEqual(false);
-        });
-        
+
         it('6.B.12: ARMY MOVEMENT WITH COASTAL SPECIFICATION', function () {
             var test = tests.b12;
             var results = jsDip.tests.execute(test);
@@ -313,8 +306,127 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
-        it('Aaron\'s Convoy Tests', function () {
+        it('6.D.6: SUPPORT TO HOLD ON CONVOYING UNIT ALLOWED', function () {
             var test = tests.d6;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.7: SUPPORT TO HOLD ON MOVING UNIT NOT ALLOWED', function () {
+            var test = tests.d7;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.8: FAILED CONVOY CAN NOT RECEIVE HOLD SUPPORT', function () {
+            var test = tests.d8;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.9: SUPPORT TO MOVE ON HOLDING UNIT NOT ALLOWED', function () {
+            var test = tests.d9;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.10: SELF DISLODGMENT PROHIBITED', function () {
+            var test = tests.d10;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.11: NO SELF DISLODGMENT OF RETURNING UNIT', function () {
+            var test = tests.d11;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.12: SUPPORTING A FOREIGN UNIT TO DISLODGE OWN UNIT PROHIBITED', function () {
+            var test = tests.d12;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.13: SUPPORTING A FOREIGN UNIT TO DISLODGE A RETURNING OWN UNIT PROHIBITED', function () {
+            var test = tests.d13;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.14: SUPPORTING A FOREIGN UNIT IS NOT ENOUGH TO PREVENT DISLODGEMENT', function () {
+            var test = tests.d14;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.15: DEFENDER CAN NOT CUT SUPPORT FOR ATTACK ON ITSELF', function () {
+            var test = tests.d15;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.16: CONVOYING A UNIT DISLODGING A UNIT OF SAME POWER IS ALLOWED', function () {
+            var test = tests.d16;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.17: CONVOYING A UNIT DISLODGING A UNIT OF SAME POWER IS ALLOWED', function () {
+            var test = tests.d17;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.18: A SURVIVING UNIT WILL SUSTAIN SUPPORT', function () {
+            var test = tests.d18;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.19: EVEN WHEN SURVIVING IS IN ALTERNATIVE WAY', function () {
+            var test = tests.d19;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.20: UNIT CAN NOT CUT SUPPORT OF ITS OWN COUNTRY', function () {
+            var test = tests.d20;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.21: DISLODGING DOES NOT CANCEL A SUPPORT CUT', function () {
+            var test = tests.d21;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.22: IMPOSSIBLE FLEET MOVE CAN NOT BE SUPPORTED', function () {
+            var test = tests.d22;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.23: IMPOSSIBLE COAST MOVE CAN NOT BE SUPPORTED', function () {
+            var test = tests.d23;
             var results = jsDip.tests.execute(test);
             report(results, test);
             expect(results).toEqual(false);

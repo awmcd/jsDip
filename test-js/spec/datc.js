@@ -432,5 +432,75 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
+        it('6.D.24: IMPOSSIBLE ARMY MOVE CAN NOT BE SUPPORTED', function () {
+            var test = tests.d24;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.25: FAILING HOLD SUPPORT CAN BE SUPPORTED', function () {
+            var test = tests.d25;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.26: FAILING MOVE SUPPORT CAN BE SUPPORTED', function () {
+            var test = tests.d26;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.27: FAILING CONVOY CAN BE SUPPORTED', function () {
+            var test = tests.d27;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.28: IMPOSSIBLE MOVE AND SUPPORT', function () {
+            var test = tests.d28;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.29: MOVE TO IMPOSSIBLE COAST AND SUPPORT', function () {
+            var test = tests.d29;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.30: MOVE WITHOUT COAST AND SUPPORT', function () {
+            var test = tests.d29;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.32: MOVE WITHOUT COAST AND SUPPORT', function () {
+            var test = tests.d32;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.33: UNWANTED SUPPORT ALLOWED', function () {
+            var test = tests.d33;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.D.34: SUPPORT TARGETING OWN AREA NOT ALLOWED', function () {
+            var test = tests.d34;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
     });
 });

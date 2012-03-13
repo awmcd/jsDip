@@ -268,3 +268,129 @@ define ->
                     dislodged:true
                 mar:
                     result:false
+                    
+        d24:
+            id: '6.D.24'
+            what: 'IMPOSSIBLE ARMY MOVE CAN NOT BE SUPPORTED'
+            orders:
+                fra: ['A mar-gol', 'F spa_sc S A mar-gol']
+                ita: ['F gol H']
+                tur: ['F tyn S F wes-gol', 'F wes-gol']
+            expect:
+                mar:
+                    result:false
+                spa:
+                    result:false
+                gol:
+                    dislodged:true
+                    
+        d25:
+            id: '6.D.25'
+            what: 'FAILING HOLD SUPPORT CAN BE SUPPORTED'
+            orders:
+                ger: ['A ber S A pru', 'F kie S A ber']
+                rus: ['F bal S A pru-ber', 'A pru-ber']
+            expect:
+                ber:
+                    result:false
+                kie:
+                    result:true
+                pru:
+                    result:false
+                    
+        d26:
+            id: '6.D.26'
+            what: 'FAILING MOVE SUPPORT CAN BE SUPPORTED'
+            orders:
+                ger: ['A ber S A pru-sil', 'F kie S A ber']
+                rus: ['F bal S A pru-ber', 'A pru-ber']
+            expect:
+                ber:
+                    result:false
+                    
+        d27:
+            id: '6.D.27'
+            what: 'FAILING CONVOY CAN BE SUPPORTED'
+            orders:
+                eng: ['F swe-bal', 'F den S F swe-bal']
+                ger: ['A ber H']
+                rus: ['F bal C A ber-lvn', 'F pru S F bal']
+            expect:
+                bal:
+                    result:false
+                pru:
+                    result:true
+                swe:
+                    result:false
+                    
+        d28:
+            id: '6.D.28'
+            what: 'IMPOSSIBLE MOVE AND SUPPORT'
+            orders:
+                aus: ['A bud S F rum']
+                rus: ['F rum-hol']
+                tur: ['F bla-rum', 'A bul S F bla-rum']
+            expect:
+                bla:
+                    result:false
+                    
+        d29:
+            id: '6.D.29'
+            what: 'MOVE TO IMPOSSIBLE COAST AND SUPPORT'
+            orders:
+                aus: ['A bud S F rum']
+                rus: ['F rum-bul_sc']
+                tur: ['F bla-rum', 'A bul S F bla-rum']
+            expect:
+                bla:
+                    result:false
+                    
+        d30:
+            id: '6.D.30'
+            what: 'MOVE WITHOUT COAST AND SUPPORT'
+            orders:
+                ita: ['F aeg S F con']
+                rus: ['F con-bul']
+                tur: ['F bla-con', 'A bul S F bla-con']
+            expect:
+                bla:
+                    result:false
+                    
+        # 6.D.31 : Not relevant to this implementation
+        
+        d32:
+            id: '6.D.32'
+            what: 'A MISSING FLEET'
+            orders:
+                ita: ['F edi S A lvp-yor', 'F lvp-yor']
+                fra: ['F lon S A yor']
+                ger: ['A yor-hol']
+            expect:
+                lvp:
+                    result:false
+                    
+        d33:
+            id: '6.D.33'
+            what: 'UNWANTED SUPPORT ALLOWED'
+            orders:
+                aus: ['A ser-bud', 'A vie-bud']
+                rus: ['A gal S A ser-bud']
+                tur: ['A bul-ser']
+            expect:
+                bul:
+                    result:true
+                ser:
+                    result:true
+                    
+        d34:
+            id: '6.D.34'
+            what: 'SUPPORT TARGETING OWN AREA NOT ALLOWED'
+            orders:
+                ger: ['A ber-pru', 'A sil S A ber-pru', 'F bal S A ber-pru']
+                ita: ['A pru S lvn-pru']
+                rus: ['A war S A lvn-pru', 'A lvn-pru']
+            expect:
+                pru:
+                    result:false
+                ber:
+                    result:true

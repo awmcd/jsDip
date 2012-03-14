@@ -247,6 +247,34 @@ describe("DATC Tests", function () {
             expect(results).toEqual(false);
         });
         
+        it('6.C.4: A CIRCULAR MOVEMENT WITH ATTACKED CONVOY', function () {
+            var test = tests.c4;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.C.5: A DISRUPTED CIRCULAR MOVEMENT DUE TO DISLODGED CONVOY', function () {
+            var test = tests.c5;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.C.6: TWO ARMIES WITH CONVOYS', function () {
+            var test = tests.c6;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.C.7: DISRUPTED UNIT SWAP', function () {
+            var test = tests.c7;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
     });
 
 describe("SUPPORTS AND DISLODGES", function () {

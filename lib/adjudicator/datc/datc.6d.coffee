@@ -250,8 +250,8 @@ define ->
             id: '6.D.22'
             what: 'IMPOSSIBLE FLEET MOVE CAN NOT BE SUPPORTED'
             orders:
-                ger: ['kie-mun', 'A bur S F kie-mun']
-                rus: ['a mun-kie', 'A ber S A mun-kie']
+                ger: ['F kie-mun', 'A bur S F kie-mun']
+                rus: ['A mun-kie', 'A ber S A mun-kie']
             expect:
                 kie:
                     dislodged:true

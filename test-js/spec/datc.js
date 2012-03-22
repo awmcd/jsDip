@@ -509,7 +509,7 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
-        it('6.D.32: MOVE WITHOUT COAST AND SUPPORT', function () {
+        it('6.D.32: A MISSING FLEET', function () {
             var test = tests.d32;
             var results = jsDip.tests.execute(test);
             report(results, test);
@@ -525,6 +525,127 @@ describe("SUPPORTS AND DISLODGES", function () {
         
         it('6.D.34: SUPPORT TARGETING OWN AREA NOT ALLOWED', function () {
             var test = tests.d34;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+    });
+    
+    describe("HEAD TO HEAD BATTLES AND BELEAGUERED GARRISON", function () {
+        var tests;
+    
+        var report = function (results, test6a) {
+            if (results) {
+                console.log(results);
+                console.log('----- ', test6a.id, ' ', test6a.what);
+                console.log('-------- FFFFFFFFFFFFFAAIILL!');
+                console.log('-----------------------------');
+                console.log(' ');
+            } else {
+                console.log('----- Passed: ', test6a.id, ' ', test6a.what);
+                console.log(' ');
+                console.log(' ');
+            }
+        }
+        
+        beforeEach(function () {
+            tests = jsDip.tests.datc6e;
+        });
+        
+        it('6.E.1:DISLODGED UNIT HAS NO EFFECT ON ATTACKERS AREA', function () {
+            var test = tests.e1;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.2:NO SELF DISLODGEMENT IN HEAD TO HEAD BATTLE', function () {
+            var test = tests.e2;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.3:NO HELP IN DISLODGING OWN UNIT', function () {
+            var test = tests.e3;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.4:NON-DISLODGED LOSER HAS STILL EFFECT', function () {
+            var test = tests.e4;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.5:LOSER DISLODGED BY ANOTHER ARMY HAS STILL EFFECT', function () {
+            var test = tests.e5;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.6:NOT DISLODGE BECAUSE OF OWN SUPPORT HAS STILL EFFECT', function () {
+            var test = tests.e6;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.7:NO SELF DISLODGEMENT WITH BELEAGUERED GARRISON', function () {
+            var test = tests.e7;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.8:NO SELF DISLODGEMENT WITH BELEAGUERED GARRISON AND HEAD TO HEAD BATTLE', function () {
+            var test = tests.e8;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.9:ALMOST SELF DISLODGEMENT WITH BELEAGUERED GARRISON', function () {
+            var test = tests.e9;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.10:ALMOST CIRCULAR MOVEMENT WITH NO SELF DISLODGEMENT WITH BELEAGUERED GARRISON', function () {
+            var test = tests.e10;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.12:SUPPORT ON ATTACK ON OWN UNIT CAN BE USED FOR OTHER MEANS', function () {
+            var test = tests.e12;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.13:THREE WAY BELEAGUERED GARRISON', function () {
+            var test = tests.e13;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.14:ILLEGAL HEAD TO HEAD BATTLE CAN STILL DEFEND', function () {
+            var test = tests.e14;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.E.15:THE FRIENDLY HEAD TO HEAD BATTLE', function () {
+            var test = tests.e15;
             var results = jsDip.tests.execute(test);
             report(results, test);
             expect(results).toEqual(false);

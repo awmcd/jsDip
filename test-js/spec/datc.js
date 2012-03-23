@@ -652,4 +652,125 @@ describe("SUPPORTS AND DISLODGES", function () {
         });
         
     });
+    
+    describe("CONVOYS", function () {
+        var tests;
+    
+        var report = function (results, test6a) {
+            if (results) {
+                console.log(results);
+                console.log('----- ', test6a.id, ' ', test6a.what);
+                console.log('-------- FFFFFFFFFFFFFAAIILL!');
+                console.log('-----------------------------');
+                console.log(' ');
+            } else {
+                console.log('----- Passed: ', test6a.id, ' ', test6a.what);
+                console.log(' ');
+                console.log(' ');
+            }
+        }
+        
+        beforeEach(function () {
+            tests = jsDip.tests.datc6f;
+        });
+        
+        it('6.F.1:NO CONVOY IN COASTAL AREAS', function () {
+            var test = tests.f1;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.2:AN ARMY BEING CONVOYED CAN BOUNCE AS NORMAL', function () {
+            var test = tests.f2;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.3:AN ARMY BEING CONVOYED CAN RECEIVE SUPPORT', function () {
+            var test = tests.f3;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.4:AN ATTACKED CONVOY IS NOT DISRUPTED', function () {
+            var test = tests.f4;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.5:A BELEAGUERED CONVOY IS NOT DISRUPTED', function () {
+            var test = tests.f5;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.6:DISLODGED CONVOY DOES NOT CUT SUPPORT', function () {
+            var test = tests.f6;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.8:DISLODGED CONVOY DOES NOT CAUSE A BOUNCE', function () {
+            var test = tests.f8;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.9:DISLODGE OF MULTI-ROUTE CONVOY', function () {
+            var test = tests.f9;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.10:DISLODGE OF MULTI-ROUTE CONVOY WITH FOREIGN FLEET', function () {
+            var test = tests.f10;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.11:DISLODGE OF MULTI-ROUTE CONVOY WITH ONLY FOREIGN FLEETS', function () {
+            var test = tests.f11;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.12:DISLODGED CONVOYING FLEET NOT ON ROUTE', function () {
+            var test = tests.f12;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.13:THE UNWANTED ALTERNATIVE', function () {
+            var test = tests.f13;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.14:SIMPLE CONVOY PARADOX', function () {
+            var test = tests.f14;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.15:SIMPLE CONVOY PARADOX WITH ADDITIONAL CONVOY', function () {
+            var test = tests.f15;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+    });
 });

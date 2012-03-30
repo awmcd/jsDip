@@ -772,5 +772,32 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
+        it('6.F.16:PANDIN\'S PARADOX', function () {
+            var test = tests.f16;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.17:PANDIN\'S EXTENDED PARADOX', function () {
+            var test = tests.f17;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.18:BETRAYAL PARADOX', function () {
+            var test = tests.f18;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.19:MULTI-ROUTE CONVOY DISRUPTION PARADOX', function () {
+            var test = tests.f19;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
     });
 });

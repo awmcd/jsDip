@@ -161,3 +161,60 @@ define ->
                     result:true
                 naf:
                     result:true
+                    
+        f16:
+            id: '6.F.16'
+            what: 'PANDIN\'S PARADOX'
+            orders:
+                eng: ['F lon S F wal-eng', 'F wal-eng']
+                fra: ['A bre-lon', 'F eng C A bre-lon']
+                ita: ['F nth S F bel-eng', 'F bel-eng']
+            expect:
+                lon:
+                    result:true
+                wal:
+                    result:false
+                bre:
+                    result:false
+                bel:
+                    result:false
+                    
+        f17:
+            id: '6.F.17'
+            what: 'PANDIN\'S EXTENDED PARADOX'
+            orders:
+                eng: ['F lon S F wal-eng', 'F wal-eng']
+                fra: ['A bre-lon', 'F eng C A bre-lon', 'F yor S A bre-lon']
+                ita: ['F nth S F bel-eng', 'F bel-eng']
+            expect:
+                bre:
+                    result:false
+                wal:
+                    result:false
+                bel:
+                    result:false
+                    
+        f18:
+            id: '6.F.18'
+            what: 'BETRAYAL PARADOX'
+            orders:
+                eng: ['F nth C A lon-bel', 'A lon-bel', 'F eng S A lon-bel']
+                fra: ['F Bel S F nth']
+                ita: ['F hel S F ska-nth', 'F ska-nth']
+            expect:
+                lon:
+                    result: false
+                ska:
+                    result: false
+                    
+        f19:
+            id: '6.F.19'
+            what: 'MULTI-ROUTE CONVOY DISRUPTION PARADOX'
+            orders:
+                eng: ['A tun-nap', 'F ion C A tun-nap', 'F tyn C A tun-nap']
+                ita: ['F nap S F rom-tyn', 'F rom-tyn']
+            expect:
+                nap:
+                    result: false
+                rom:
+                    result: false

@@ -6,7 +6,8 @@ define ->
             what: 'BASIC CONVOY EXPERIMENT'
             orders:
                 tur: ['A bre-nwy']
-                rus: ['F eng C A bre-nwy', 'F mid C A bre-nwy', 'F nat C A bre-nwy',
-                      'F nwg C A bre-nwy', 'F nth C A bre-nwy', 'F ska C A bre-nwy']
+                rus: ['F mid C A bre-nwy', 'F nat C A bre-nwy', 'F nwg C A bre-nwy']
+                fra: ['F nth C A bre-nwy', 'F eng C A bre-nwy']
             expect:
-                bre: result:true
+                bre:
+                    result: true

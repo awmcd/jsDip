@@ -218,3 +218,58 @@ define ->
                     result: false
                 rom:
                     result: false
+                    
+        f20:
+            id: '6.F.20'
+            what: 'UNWANTED MULTI-ROUTE CONVOY PARADOX'
+            orders:
+                fra: ['A tun-nap', 'F tyn C A tun-nap']
+                ita: ['F nap S F ion', 'F ion C A tun-nap']
+                tur: ['F aeg S F eas-ion', 'F eas-ion']
+            expect:
+                eas:
+                    result: true
+        
+        # F.21 after Via convoy orders
+                    
+        f22:
+            id: '6.F.22'
+            what: 'SECOND ORDER PARADOX WITH TWO RESOLUTIONS'
+            orders:
+                eng: ['F edi-nth', 'F lon S F edi-nth']
+                fra: ['A bre-lon', 'A eng C A bre-lon']
+                ger: ['F bel S F pic-eng', 'F pic-eng']
+                rus: ['A nwy-bel', 'F nth C A nwy-bel' ]
+            expect:
+                pic:
+                    result: true
+                    
+        f23:
+            id: '6.F.23'
+            what: 'SECOND ORDER PARADOX WITH TWO EXCLUSIVE CONVOYS'
+            orders:
+                eng: ['F edi-nth', 'F yor S F edi-nth']
+                fra: ['A bre-lon', 'F eng C A bre-lon']
+                ger: ['F bel S F eng', 'F lon S F nth']
+                ita: ['F mid-eng', 'F iri S F mid-eng']
+                rus: ['A nwy-bel', 'F nth C A nwy-bel']
+            expect:
+                edi:
+                    result: false
+                mid:
+                    result: false
+                    
+        f24:
+            id: '6.F.24'
+            what: 'SECOND ORDER PARADOX WITH NO RESOLUTION'
+            orders:
+                eng: ['F edi-nth', 'F lon S F edi-nth', 'F iri-eng', 'F mid S F iri-eng']
+                fra: ['A bre-lon', 'F eng C A bre-lon', 'F bel S F eng']
+                rus: ['A nwy-bel', 'F nth C A nwy-bel']
+            expect:
+                edi:
+                    result: true
+                bre:
+                    result: false
+                nwy:
+                    result: false

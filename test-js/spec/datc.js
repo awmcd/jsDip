@@ -799,5 +799,33 @@ describe("SUPPORTS AND DISLODGES", function () {
             report(results, test);
             expect(results).toEqual(false);
         });
+        
+        it('6.F.20:UNWANTED MULTI-ROUTE CONVOY PARADOX', function () {
+            var test = tests.f20;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.22:SECOND ORDER PARADOX WITH TWO RESOLUTIONS', function () {
+            var test = tests.f22;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.23:SECOND ORDER PARADOX WITH TWO EXCLUSIVE CONVOYS', function () {
+            var test = tests.f23;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.F.24:SECOND ORDER PARADOX WITH NO RESOLUTION', function () {
+            var test = tests.f23;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
     });
 });

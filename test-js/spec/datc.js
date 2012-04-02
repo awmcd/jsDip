@@ -828,4 +828,33 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
     });
+    
+    describe("CONVOYING TO ADJACENT PLACES", function () {
+        var tests;
+    
+        var report = function (results, test6a) {
+            if (results) {
+                console.log(results);
+                console.log('----- ', test6a.id, ' ', test6a.what);
+                console.log('-------- FFFFFFFFFFFFFAAIILL!');
+                console.log('-----------------------------');
+                console.log(' ');
+            } else {
+                console.log('----- Passed: ', test6a.id, ' ', test6a.what);
+                console.log(' ');
+                console.log(' ');
+            }
+        }
+        
+        beforeEach(function () {
+            tests = jsDip.tests.datc6g;
+        });
+        
+        it('6.g.1:TWO UNITS CAN SWAP PLACES BY CONVOY', function () {
+            var test = tests.g1;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+    });
 });

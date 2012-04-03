@@ -850,8 +850,22 @@ describe("SUPPORTS AND DISLODGES", function () {
             tests = jsDip.tests.datc6g;
         });
         
-        it('6.g.1:TWO UNITS CAN SWAP PLACES BY CONVOY', function () {
+        it('6.G.1:TWO UNITS CAN SWAP PLACES BY CONVOY', function () {
             var test = tests.g1;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.2:KIDNAPPING AN ARMY', function () {
+            var test = tests.g2;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.3:KIDNAPPING WITH A DISRUPTED CONVOY', function () {
+            var test = tests.g3;
             var results = jsDip.tests.execute(test);
             report(results, test);
             expect(results).toEqual(false);

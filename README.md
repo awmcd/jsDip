@@ -2,7 +2,6 @@ All the goodness of jDip in your browser.
 
 (A work in progress.)
 
-CHANGELOG:
 
 v0.10 - 04/04/12
 ----------------

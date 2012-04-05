@@ -127,7 +127,18 @@ define ->
                 den:
                     result:false
                     
-        #e11: Wait for "via Convoy" implementation
+        e11:
+            id: '6.E.11'
+            what: 'NO SELF DISLODGEMENT WITH BELEAGUERED GARRISON, UNIT SWAP WITH ADJACENT CONVOYING AND TWO COASTS'
+            orders:
+                fra: ['A spa-por vC', 'F mid C A spa-por', 'F gol S F por-spa_nc']
+                ger: ['A mar S A gas-spa', 'A gas-spa']
+                ita: ['F por-spa_nc', 'F wes S F por-spa_nc']
+            expect:
+                spa:
+                    result:true
+                por:
+                    result:true
         
         e12:
             id: '6.E.12'

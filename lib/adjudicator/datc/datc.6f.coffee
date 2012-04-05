@@ -67,7 +67,7 @@ define ->
                 pic:
                     result:false
                     
-        #f7 Test Later - involved retreat
+        #F7 N/A; involes retreat
         
         f8:
             id: '6.F.8'
@@ -230,7 +230,18 @@ define ->
                 eas:
                     result: true
         
-        # F.21 after Via convoy orders
+        f21:
+            id: '6.F.21'
+            what: 'DAD\'S ARMY CONVOY'
+            orders:
+                rus: ['A edi S A nwy-cly', 'F nwg C A nwy-cly', 'A nwy-cly']
+                fra: ['F iri S F mid-nat', 'F mid-nat']
+                eng: ['A lvp-cly vC', 'F nat C A lvp-cly', 'F cly S F nat']
+            expect:
+                mid:
+                    result: true
+                nat:
+                    dislodged: true
                     
         f22:
             id: '6.F.22'

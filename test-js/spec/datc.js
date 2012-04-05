@@ -623,6 +623,13 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
+        it('6.E.11:NO SELF DISLODGEMENT WITH BELEAGUERED GARRISON, UNIT SWAP WITH ADJACENT CONVOYING AND TWO COASTS', function () {
+            var test = tests.e11;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
         it('6.E.12:SUPPORT ON ATTACK ON OWN UNIT CAN BE USED FOR OTHER MEANS', function () {
             var test = tests.e12;
             var results = jsDip.tests.execute(test);
@@ -807,6 +814,13 @@ describe("SUPPORTS AND DISLODGES", function () {
             expect(results).toEqual(false);
         });
         
+        it('6.F.21:DAD\'S ARMY CONVOY', function () {
+            var test = tests.f21;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
         it('6.F.22:SECOND ORDER PARADOX WITH TWO RESOLUTIONS', function () {
             var test = tests.f22;
             var results = jsDip.tests.execute(test);
@@ -866,6 +880,111 @@ describe("SUPPORTS AND DISLODGES", function () {
         
         it('6.G.3:KIDNAPPING WITH A DISRUPTED CONVOY', function () {
             var test = tests.g3;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.4:KIDNAPPING WITH A DISRUPTED CONVOY AND OPPOSITE MOVE', function () {
+            var test = tests.g4;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.5:SWAPPING WITH INTENT', function () {
+            var test = tests.g5;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.6:SWAPPING WITH UNINTENDED INTENT', function () {
+            var test = tests.g6;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.7:SWAPPING WITH ILLEGAL INTENT', function () {
+            var test = tests.g7;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.8:EXPLICIT CONVOY THAT ISN\'T THERE', function () {
+            var test = tests.g8;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.9:SWAPPED OR DISLODGED?', function () {
+            var test = tests.g9;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.10:SWAPPED OR AN HEAD TO HEAD BATTLE?', function () {
+            var test = tests.g10;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.11:A CONVOY TO AN ADJACENT PLACE WITH A PARADOX', function () {
+            var test = tests.g11;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.12:SWAPPING TWO UNITS WITH TWO CONVOYS', function () {
+            var test = tests.g12;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.13:SUPPORT CUT ON ATTACK ON ITSELF VIA CONVOY', function () {
+            var test = tests.g13;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.14:BOUNCE BY CONVOY TO ADJACENT PLACE', function () {
+            var test = tests.g14;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.15:BOUNCE AND DISLODGE WITH DOUBLE CONVOY', function () {
+            var test = tests.g15;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.16:THE TWO UNIT IN ONE AREA BUG, MOVING BY CONVOY', function () {
+            var test = tests.g16;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.17:THE TWO UNIT IN ONE AREA BUG, MOVING OVER LAND', function () {
+            var test = tests.g17;
+            var results = jsDip.tests.execute(test);
+            report(results, test);
+            expect(results).toEqual(false);
+        });
+        
+        it('6.G.18:THE TWO UNIT IN ONE AREA BUG, WITH DOUBLE CONVOY', function () {
+            var test = tests.g18;
             var results = jsDip.tests.execute(test);
             report(results, test);
             expect(results).toEqual(false);

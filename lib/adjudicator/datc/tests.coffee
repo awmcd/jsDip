@@ -5,9 +5,12 @@ define ->
             id: 'T1'
             what: 'BASIC CONVOY EXPERIMENT'
             orders:
-                tur: ['A bre-nwy']
-                rus: ['F mid C A bre-nwy', 'F nat C A bre-nwy', 'F nwg C A bre-nwy']
-                fra: ['F nth C A bre-nwy', 'F eng C A bre-nwy']
+                rus: ['f den-nth', 'f hel s f den-nth']
+                fra: ['F nat C A edi-lvp']
+                eng: ['F nth C A edi-lvp', 'F nwg C A edi-lvp', 'F iri C A edi-lvp', 'F eng C A edi-lvp', 'a edi-lvp']
+                aus: ['a lvp-edi']
             expect:
-                bre:
+                lvp:
+                    result: true
+                edi:
                     result: true
